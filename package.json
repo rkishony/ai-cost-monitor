@@ -1,0 +1,8 @@
+{
+  "name": "cursor-cost-pricing",
+  "private": false,
+  "scripts": {
+    "refresh-pricing": "node scripts/refresh-pricing.js",
+    "compile-pricing": "node scripts/compile-pricing.js"
+  }
+}
