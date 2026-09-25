@@ -2,7 +2,7 @@
 
 **Local cost estimates for Cursor** — see what each chat and model likely costs, without sending your prompts to a third party.
 
-[Install on Cursor (Open VSX)](https://open-vsx.org/extension/rkishony/ai-cost) · [Pricing table](docs/index.html) · [Issues](https://github.com/roykishony/cursor-addon/issues)
+[Install on Cursor (Open VSX)](https://open-vsx.org/extension/rkishony/ai-cost) · [Pricing table](https://rkishony.github.io/ai-cost-monitor/) · [Issues](https://github.com/roykishony/cursor-addon/issues)
 
 ## What you get
 
@@ -21,7 +21,7 @@ This repository holds the **published** pricing table the extension downloads:
 |------|---------|
 | [`extension/pricing.json`](extension/pricing.json) | Machine-readable rates (default `cursorCost.pricingUrl`) |
 | [`pricing.csv`](pricing.csv) | Human-reviewed source |
-| [`docs/index.html`](docs/index.html) | Browseable rate table (GitHub Pages) |
+| [`docs/index.html`](https://rkishony.github.io/ai-cost-monitor/) | Browseable rate table (GitHub Pages) |
 
 Rates are **estimates** based on [Cursor’s public model docs](https://cursor.com/docs/models-and-pricing). Real billing can differ (routing, caching, plan limits, hidden context). Always verify with Cursor.
 
