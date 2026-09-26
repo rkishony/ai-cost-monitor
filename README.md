@@ -1,21 +1,20 @@
 # AI Cost Monitor
 
-**Local cost estimates for Cursor** — see what each chat and model likely costs, without sending your prompts to a third party.
+**See, track, and control Cursor AI spend.**
 
-[Install on Cursor (Open VSX)](https://open-vsx.org/extension/rkishony/ai-cost) · [Pricing table](https://rkishony.github.io/ai-cost-monitor/) · [Issues](https://github.com/roykishony/cursor-addon/issues)
+[Install on Cursor (Open VSX)](https://open-vsx.org/extension/rkishony/ai-cost) · [Pricing table](https://rkishony.github.io/ai-cost-monitor/) · [Issues](https://github.com/roykishony/ai-cost-monitor/issues)
 
 ## What you get
 
-- **Status bar** total and per-chat breakdown in the editor
-- **Token-level estimates** (input, output, cache read/write) using reviewed model rates
-- **Optional badges** in chat and the model picker (experimental)
-- **Plan / usage** view when Cursor’s usage API is enabled
+- **Real-time usage cost** while you code — live spend from your Cursor account, always visible
+- **Model costs in context** — per-turn spend in chat and rates in the picker before you choose
+- **Graphical spend analytics** — trends, billing periods, and breakdowns by model, project, and provider
 
-Everything runs **on your machine**. The extension author does not receive your chats or usage.
+**Your data stays local.** Cached locally. No data is sent outside. No author servers. No telemetry.
 
 ## Pricing data
 
-This repository holds the **published** pricing table the extension downloads:
+This repository holds the Cursor's pricing table the extension downloads:
 
 | File | Purpose |
 |------|---------|
@@ -23,7 +22,7 @@ This repository holds the **published** pricing table the extension downloads:
 | [`pricing.csv`](pricing.csv) | Human-reviewed source |
 | [`docs/index.html`](https://rkishony.github.io/ai-cost-monitor/) | Browseable rate table (GitHub Pages) |
 
-Rates are **estimates** based on [Cursor’s public model docs](https://cursor.com/docs/models-and-pricing). Real billing can differ (routing, caching, plan limits, hidden context). Always verify with Cursor.
+Not official rates. Rates are scrapped from [Cursor’s public model docs](https://cursor.com/docs/models-and-pricing).
 
 ## Install
 
@@ -31,18 +30,13 @@ Rates are **estimates** based on [Cursor’s public model docs](https://cursor.c
 2. Search **AI Cost Monitor** or install from [Open VSX](https://open-vsx.org/extension/rkishony/ai-cost)
 3. Click the **$** in the status bar to open details
 
-On first run the extension fetches `pricing.json` from this repo and caches it locally.
-
 ## Privacy
 
-- Request metadata and token counts stay in local extension storage
-- Optional usage API uses your existing Cursor sign-in to read dashboard data — cached locally only
-- **No analytics or telemetry** from the extension
-
-## Updating this table
-
-Maintainers regenerate files from the private [`cursor-addon`](https://github.com/roykishony/cursor-addon) repo (`npm run publish-pricing`), review the diff here, then push. Users pick up new rates when the extension refreshes pricing (automatically on upgrade or via **AI Cost: Refresh Pricing**).
+- Only pulls usage from Cursor and public pricing from GitHub ([Pricing table](https://rkishony.github.io/ai-cost-monitor/)). 
+- Request metadata and token counts stay in local extension storage.
+- Cursor usage API uses your existing Cursor sign-in to read dashboard data — cached locally only.
+- **No analytics or telemetry** is sent from the extension.
 
 ## License
 
-Pricing data is maintained for the MIT-licensed AI Cost Monitor extension. See the extension repository for license terms.
+MIT — [LICENSE](LICENSE).
